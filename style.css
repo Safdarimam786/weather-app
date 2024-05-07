@@ -29,13 +29,18 @@ button {
 input {
   -webkit-appearance: none;
 }
- 
+ form{
+    display:flex ;
+    justify-content: center;
+ }
 button,
 input {
+  
   border: none;
   background: none;
   outline: none;
   color: inherit;
+  
 }
 
 img {
