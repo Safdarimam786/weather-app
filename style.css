@@ -4,7 +4,7 @@
   --bg_main: hsl(0, 0%, 100%);
   --text_light: #ffffff;
   --bgcolor: linear-gradient(#e91e625e, #ffc18764);
-  --text_med: #1c68ea;
+  --text_med: #ffffff;
   --text_dark: #ffffff;
   --red: #0084ff;
   --darkred: #c3112d;
@@ -258,7 +258,9 @@ body {
   
   .ajax-section .cities {
     grid-template-columns: repeat(1, 1fr);
+    
   }
+
 }
 
 
