@@ -2,10 +2,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   --bg_main: hsl(0, 0%, 100%);
-  --text_light: #ffffff;
+  --text_light: #000000;
   --bgcolor: linear-gradient(#e91e625e, #ffc18764);
   --text_med: #ffffff;
-  --text_dark: #ffffff;
+  --text_dark: #0084ff;
   --red: #0084ff;
   --darkred: #c3112d;
   --orange: #ff8c00;
@@ -29,6 +29,10 @@ button {
  
 input {
   -webkit-appearance: none;
+  
+  background: #e0e0e0;
+  box-shadow: inset 8px 8px 16px #c5c5c5,
+              inset -8px -8px 16px #fbfbfb;
 }
  form{
     display:flex ;
@@ -58,7 +62,8 @@ ul {
 body {
  
   font: 1rem/1.3 "Roboto", sans-serif;
-  background: url("https://wallpapers.com/images/featured/weather-xqhs9axpy8btfd3y.jpg");
+  /* background: url("https://wallpapers.com/images/featured/weather-xqhs9axpy8btfd3y.jpg"); */
+  background-color: #e0e0e0;;
   color: var(--text_dark);
   padding: 1px;
 }
@@ -93,10 +98,11 @@ body {
 }
 
 .top-banner form input {
-  font-size: 2rem;
-  height: 40px;
-  padding: 5px 5px 10px;
-  border-bottom: 1px solid;
+  font-size: 1.5rem;
+  height: 60px;
+  padding: 25px 25px 25px;
+  border-radius: 15px;
+  
 }
 
 .top-banner form input::placeholder {
@@ -107,15 +113,20 @@ body {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  padding: 15px 20px;
+  padding: 20px 25px;
   margin-left: 15px;
-  border-radius: 5px;
+  
   background: var(--red);
   transition: background 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
 .top-banner form button:hover {
-  background: var(--darkred);
+  /* background: var(--darkred);border-radius: 50px; */
+  background: #e0e0e0;
+  box-shadow: inset 8px 8px 16px #c5c5c5,
+              inset -8px -8px 16px #fbfbfb;
+
 }
 
 .top-banner form .msg {
@@ -135,14 +146,14 @@ body {
 
 .ajax-section .cities {
   display: grid;
-  grid-gap: 32px 20px;
+  grid-gap: 32px 40px;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .ajax-section .city {
   position: relative;
   padding: 40px 10%;
-  border-radius: 20px;
+  /* border-radius: 20px;
   background: var(--bgcolor);
   backdrop-filter: blur(15px);
   color: var(--text_med);
@@ -151,7 +162,11 @@ body {
   21.1px 21.1px 10px rgba(0, 0, 0, 0.019),
   40.1px 40.1px 24.1px rgba(0, 0, 0, 0.033),
   100px 100px 80px rgba(0, 0, 0, 0.07)
-;
+; */
+border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 
 .ajax-section .city::after {
