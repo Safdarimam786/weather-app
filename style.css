@@ -135,7 +135,8 @@ box-shadow:  8px 8px 16px #c5c5c5,
 .top-banner form .msg {
   position: absolute;
   bottom: -40px;
-  left: 0;
+  center : 0;
+  
   max-width: 450px;
   min-height: 40px;
 }
